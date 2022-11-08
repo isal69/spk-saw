@@ -1,4 +1,4 @@
-<!-- <!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -10,8 +10,11 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
-    <script src="<?= base_url('js/bootstrap.bundle.min.js'); ?>" ></script>
+    <?= $this->include('layout/navbar') ?>
+
+    <?= $this->renderSection('content'); ?>
+
+    <script src="<?= base_url('js/bootstrap.bundle.min.js'); ?>"></script>
 </body>
 
-</html> -->
+</html>
