@@ -14,20 +14,20 @@
           <a class="nav-link" href="<?=base_url('karyawan')?>"> Karyawan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kriteria</a>
+          <a class="nav-link" href="<?=base_url('kriteria')?>">Kriteria</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">periode</a>
+          <a class="nav-link" href="<?=base_url('periode')?>">periode</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kriteria-Periode</a>
+          <a class="nav-link" href="<?=base_url('kritper')?>">Kriteria-Periode</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Penilaian</a>
+          <a class="nav-link" href="<?=base_url('penilaian')?>">Penilaian</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Laporan</a>
+          <a class="nav-link" href="<?=base_url('laporan')?>">Laporan</a>
         </li>
       </ul>
 
