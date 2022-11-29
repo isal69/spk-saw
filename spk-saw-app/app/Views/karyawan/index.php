@@ -5,11 +5,11 @@
 
 <div class="container">
     <h1>Halaman data karyawan</h1>
-    <button type="button" class="btn btn-primary">Tambah Data Karyawan Baru</button>
+    <a href="<?=base_url('karyawan/add')?>" class="btn btn-primary">Tambah Data Karyawan Baru</a>
     <br><br>
     <div class="row">
         <div class="col">
-            <table id="example" class="table table-striped" style="width:100%">
+            <table id="karyawan" class="table table-striped" style="width:100%">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -71,17 +71,12 @@
                     </tr>
                 </tbody>
             </table>
-
-            <script>
-                $(document).ready(function() {
-                    $('#example').DataTable();
-                });
-            </script>
         </div>
     </div>
-
-
-
 </div>
-
+<script>
+    $(document).ready(function() {
+        $('#karyawan').DataTable();
+    });
+</script>
 <?= $this->endSection(); ?>
