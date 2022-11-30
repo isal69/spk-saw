@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="<?= base_url('css/bootstrap.min.css'); ?>" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link href="<?= base_url('css/dataTables.bootstrap5.min.css'); ?>" rel="stylesheet">
     
 
