@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 08 Nov 2022 pada 12.34
+-- Waktu pembuatan: 06 Des 2022 pada 09.16
 -- Versi server: 5.7.33
 -- Versi PHP: 7.4.19
 
@@ -36,6 +36,16 @@ CREATE TABLE `karyawan` (
   `no_hp` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `karyawan`
+--
+
+INSERT INTO `karyawan` (`id_karyawan`, `nip`, `nama`, `jns_kel`, `alamat`, `no_hp`) VALUES
+(4, '123345', 'wwwww', 'L', 'pekl', '0909282'),
+(6, '123456', '1212', 'P', '1212', '1212'),
+(7, '12345', 'Ini nama dany', 'L', 'Jl. Sudirman No.120', '2222'),
+(8, '123456', 'acreerre', 'L', 'sssss', '085801536505');
+
 -- --------------------------------------------------------
 
 --
@@ -47,6 +57,13 @@ CREATE TABLE `kriteria` (
   `nama_kriteria` varchar(20) NOT NULL,
   `tipe` enum('B','C') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `kriteria`
+--
+
+INSERT INTO `kriteria` (`id_kriteria`, `nama_kriteria`, `tipe`) VALUES
+(2, 'Wawancarasssss', 'C');
 
 -- --------------------------------------------------------
 
@@ -102,6 +119,14 @@ CREATE TABLE `periode` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data untuk tabel `periode`
+--
+
+INSERT INTO `periode` (`id_periode`, `tahun`) VALUES
+(1, 2020),
+(2, 2015);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -155,13 +180,13 @@ ALTER TABLE `periode`
 -- AUTO_INCREMENT untuk tabel `karyawan`
 --
 ALTER TABLE `karyawan`
-  MODIFY `id_karyawan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_karyawan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `kriteria`
 --
 ALTER TABLE `kriteria`
-  MODIFY `id_kriteria` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kriteria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `kriteria_periode`
@@ -185,7 +210,7 @@ ALTER TABLE `perangkingan`
 -- AUTO_INCREMENT untuk tabel `periode`
 --
 ALTER TABLE `periode`
-  MODIFY `id_periode` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_periode` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

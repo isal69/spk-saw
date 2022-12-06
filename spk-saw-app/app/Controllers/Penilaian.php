@@ -2,10 +2,11 @@
 
 namespace App\Controllers;
 
-class penilaian extends BaseController
+class Penilaian extends BaseController
 {
     public function index()
     {
         return view('penilaian/index');
     }
 }
+?>
